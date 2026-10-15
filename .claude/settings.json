@@ -1,0 +1,50 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node scripts/state.js:*)",
+      "Bash(node scripts/setup.js:*)",
+      "Bash(node .claude/skills/artifact-validator/scripts/check-artifact.js:*)",
+      "WebSearch",
+      "WebFetch",
+      "mcp__exercise-db",
+      "mcp__musclesworked"
+    ],
+    "deny": [
+      "Bash(node scripts/review.js:*)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  },
+  "enabledMcpjsonServers": ["exercise-db", "musclesworked"],
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/approval-gate-guard.js\"" },
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/no-leak-guard.js\"" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/approval-gate-guard.js\"" }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/post-write-state.js\"" }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          { "type": "command", "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/post-bash-sync.js\"" }
+        ]
+      }
+    ]
+  }
+}

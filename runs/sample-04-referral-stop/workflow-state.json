@@ -1,0 +1,131 @@
+{
+  "runId": "sample-04-referral-stop",
+  "createdAt": "2026-10-15T00:00:42.892Z",
+  "updatedAt": "2026-10-15T00:01:06.748Z",
+  "status": "stopped",
+  "requirementsConfirmed": false,
+  "stages": {
+    "requirements": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/01-requirements.md",
+      "sha256": "98186a707dd8d131f604907ec854e2439fbe545927117670eea0b415d3a86b3b",
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "guidelines": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/02-guidelines.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "exercises": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/03-exercise-selection.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "training": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/04-training-plan.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "cardio": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/05-cardio-plan.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "recovery": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/06-recovery-plan.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "validation": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/07-validation-report.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "draft": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "artifacts/08-draft-program.md",
+      "sha256": null,
+      "updatedAt": null
+    },
+    "final": {
+      "status": "pending",
+      "retries": 0,
+      "artifact": "final/training-program.md",
+      "sha256": null,
+      "updatedAt": null
+    }
+  },
+  "gates": {
+    "G1": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G2": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G3": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G4": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G5": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G6": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G7": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    },
+    "G8": {
+      "status": "pending",
+      "owners": [],
+      "updatedAt": "2026-10-15T00:01:01.628Z"
+    }
+  },
+  "approval": {
+    "status": "pending"
+  },
+  "events": [
+    {
+      "at": "2026-10-15T00:00:42.892Z",
+      "msg": "run initialised"
+    },
+    {
+      "at": "2026-10-15T00:01:01.628Z",
+      "msg": "requirements artifact written"
+    },
+    {
+      "at": "2026-10-15T00:01:06.748Z",
+      "msg": "run status -> stopped: safety referral"
+    }
+  ]
+}

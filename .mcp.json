@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "exercise-db": {
+      "command": "node",
+      "args": ["vendor/exercise-mcp/server.js"],
+      "env": {
+        "EXERCISES_JSON": "vendor/exercise-mcp/data/exercises.json"
+      }
+    },
+    "musclesworked": {
+      "command": "npx",
+      "args": ["-y", "musclesworked-mcp@0.1.0"],
+      "env": {
+        "MUSCLESWORKED_API_KEY": "${MUSCLESWORKED_API_KEY}"
+      }
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "runId": "sample-01-beginner-home-fat-loss",
+  "createdAt": "2026-10-14T22:24:05.577Z",
+  "updatedAt": "2026-10-14T23:03:22.789Z",
+  "status": "completed",
+  "requirementsConfirmed": true,
+  "stages": {
+    "requirements": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/01-requirements.md",
+      "sha256": "f3c1f2690509b3562b588fd9a5838ce14ee12a225e8b82a91506739a720617df",
+      "updatedAt": "2026-10-14T22:24:51.009Z"
+    },
+    "guidelines": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/02-guidelines.md",
+      "sha256": "2940919cba8a94dd0446c553c4e5e840118435e6eee7e019b0508a22c144453f",
+      "updatedAt": "2026-10-14T22:31:07.003Z"
+    },
+    "exercises": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/03-exercise-selection.md",
+      "sha256": "614cc541b9ae27098e358ff6e1371c945486f71b2884785ec75bce877743c650",
+      "updatedAt": "2026-10-14T22:29:04.855Z"
+    },
+    "training": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/04-training-plan.md",
+      "sha256": "bc252c70e43bf3b23b28203b9c81bbd0214121f2895b9794171e21b1cec2194b",
+      "updatedAt": "2026-10-14T22:34:25.722Z"
+    },
+    "cardio": {
+      "status": "done",
+      "retries": 1,
+      "artifact": "artifacts/05-cardio-plan.md",
+      "sha256": "6f754d80ed3b63da50511e1a3ea420803effa312ed4c7619717cf0fc6ff33bff",
+      "updatedAt": "2026-10-14T22:44:23.000Z"
+    },
+    "recovery": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/06-recovery-plan.md",
+      "sha256": "06dd766fdf8d2e83a492e077e679d1c58560a9e689d4c48e45011479936008c4",
+      "updatedAt": "2026-10-14T22:46:10.969Z"
+    },
+    "validation": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/07-validation-report.md",
+      "sha256": "e3e47fdc16e85894587b1e2e111b752ea8b960e7a5f3715089e929b97af8db22",
+      "updatedAt": "2026-10-14T22:48:04.076Z"
+    },
+    "draft": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/08-draft-program.md",
+      "sha256": "c30f92c16b68f4e9b4f14ed1894247bb686cb80f0a9ea49d224a94b3b53012af",
+      "updatedAt": "2026-10-14T23:03:22.789Z"
+    },
+    "final": {
+      "status": "stale",
+      "retries": 0,
+      "artifact": "final/training-program.md",
+      "sha256": "3684666b82942611ed73efdc03b9281a13351e4fd5644074420ca0d2c5886250",
+      "updatedAt": "2026-10-14T22:55:11.766Z"
+    }
+  },
+  "gates": {
+    "G1": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:20.728Z"
+    },
+    "G2": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:20.813Z"
+    },
+    "G3": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:20.886Z"
+    },
+    "G4": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:20.963Z"
+    },
+    "G5": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:21.043Z"
+    },
+    "G6": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:21.119Z"
+    },
+    "G7": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:21.182Z"
+    },
+    "G8": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T22:48:21.245Z"
+    }
+  },
+  "approval": {
+    "status": "pending"
+  },
+  "events": [
+    {
+      "at": "2026-10-14T22:24:05.577Z",
+      "msg": "run initialised"
+    },
+    {
+      "at": "2026-10-14T22:24:51.009Z",
+      "msg": "requirements artifact written"
+    },
+    {
+      "at": "2026-10-14T22:25:34.722Z",
+      "msg": "requirements confirmed by user"
+    },
+    {
+      "at": "2026-10-14T22:25:42.295Z",
+      "msg": "guidelines -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:25:42.504Z",
+      "msg": "exercises -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:29:04.855Z",
+      "msg": "exercises artifact written"
+    },
+    {
+      "at": "2026-10-14T22:31:07.003Z",
+      "msg": "guidelines artifact written"
+    },
+    {
+      "at": "2026-10-14T22:31:21.684Z",
+      "msg": "training -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:31:21.747Z",
+      "msg": "cardio -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:33:19.340Z",
+      "msg": "cardio artifact written"
+    },
+    {
+      "at": "2026-10-14T22:34:25.722Z",
+      "msg": "training artifact written"
+    },
+    {
+      "at": "2026-10-14T22:34:42.844Z",
+      "msg": "recovery -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:38:17.763Z",
+      "msg": "recovery artifact written"
+    },
+    {
+      "at": "2026-10-14T22:38:38.206Z",
+      "msg": "validation -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:42:10.795Z",
+      "msg": "validation artifact written"
+    },
+    {
+      "at": "2026-10-14T22:42:27.155Z",
+      "msg": "gate G1 pass"
+    },
+    {
+      "at": "2026-10-14T22:42:27.216Z",
+      "msg": "gate G2 pass"
+    },
+    {
+      "at": "2026-10-14T22:42:27.352Z",
+      "msg": "gate G3 pass"
+    },
+    {
+      "at": "2026-10-14T22:42:27.438Z",
+      "msg": "gate G4 pass"
+    },
+    {
+      "at": "2026-10-14T22:42:27.521Z",
+      "msg": "gate G5 pass"
+    },
+    {
+      "at": "2026-10-14T22:42:27.670Z",
+      "msg": "gate G7 pass"
+    },
+    {
+      "at": "2026-10-14T22:42:27.744Z",
+      "msg": "gate G8 fail owners=cardio"
+    },
+    {
+      "at": "2026-10-14T22:42:27.811Z",
+      "msg": "recovery marked stale (upstream \"cardio\" changed)"
+    },
+    {
+      "at": "2026-10-14T22:42:27.811Z",
+      "msg": "validation marked stale (upstream \"cardio\" changed)"
+    },
+    {
+      "at": "2026-10-14T22:42:27.811Z",
+      "msg": "cardio retry 1/3"
+    },
+    {
+      "at": "2026-10-14T22:42:36.593Z",
+      "msg": "cardio -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:44:23.000Z",
+      "msg": "cardio artifact written"
+    },
+    {
+      "at": "2026-10-14T22:44:49.850Z",
+      "msg": "recovery -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:46:10.969Z",
+      "msg": "recovery artifact written"
+    },
+    {
+      "at": "2026-10-14T22:46:25.894Z",
+      "msg": "validation -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:48:04.076Z",
+      "msg": "validation artifact written"
+    },
+    {
+      "at": "2026-10-14T22:48:20.728Z",
+      "msg": "gate G1 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:20.813Z",
+      "msg": "gate G2 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:20.886Z",
+      "msg": "gate G3 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:20.963Z",
+      "msg": "gate G4 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:21.043Z",
+      "msg": "gate G5 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:21.119Z",
+      "msg": "gate G6 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:21.182Z",
+      "msg": "gate G7 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:21.245Z",
+      "msg": "gate G8 pass"
+    },
+    {
+      "at": "2026-10-14T22:48:24.081Z",
+      "msg": "draft -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:51:37.078Z",
+      "msg": "draft artifact written"
+    },
+    {
+      "at": "2026-10-14T22:51:59.996Z",
+      "msg": "run status -> awaiting_approval"
+    },
+    {
+      "at": "2026-10-14T22:52:46.005Z",
+      "msg": "draft approved by human"
+    },
+    {
+      "at": "2026-10-14T22:53:01.278Z",
+      "msg": "final -> in_progress"
+    },
+    {
+      "at": "2026-10-14T22:55:11.767Z",
+      "msg": "final artifact written"
+    },
+    {
+      "at": "2026-10-14T22:55:11.767Z",
+      "msg": "run completed"
+    },
+    {
+      "at": "2026-10-14T23:03:22.789Z",
+      "msg": "draft artifact written"
+    },
+    {
+      "at": "2026-10-14T23:03:22.789Z",
+      "msg": "final marked stale (upstream \"draft\" changed)"
+    }
+  ]
+}

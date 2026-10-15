@@ -1,0 +1,37 @@
+---
+artifact: 07-validation-report
+owner: validator
+run: sample-02-intermediate-gym-muscle-gain
+inputs: [01-requirements, 02-guidelines, 03-exercise-selection, 04-training-plan, 06-recovery-plan]
+status: final
+---
+# Validation Report
+
+## Summary
+
+Overall result: **PASS**. 8 of 8 gates pass, 0 fail.
+
+- The cardio stage was skipped on purpose (01-requirements, Execution Hints: "cardio_stage: skip"; modality strength-only).
+  There is no 05-cardio-plan.md, so cardio checks are not applicable in every gate.
+- G4 used musclesworked `analyze_workout` on the full Phase 1 week (25 exercises) and the full Phase 2 week
+  (24 exercises). All exercises were found. Both calls returned `gaps: []` and `imbalances: []`.
+- G7 fetched all 17 URLs in 02-guidelines plus 6 more (5 recovery-only sources in 06 and the exercise dataset cited
+  in 03 and 04): 23 pages. All exist and support the claims made.
+- Minor observations that do not fail a gate are listed under the gate findings below.
+
+## Gate Results
+
+| Gate | Name | Result | Findings | Owner stages |
+|---|---|---|---|---|
+| G1 | Equipment match | PASS | 01 lists a full commercial gym (barbells, racks, dumbbells, cables, machines, pull-up bar, benches). Every exercise in 03 and 04 maps to that list: barbell, dumbbell, cable, leverage/sled machines, pull-up bar, dip station, benches. Warm-up rower or bike and cool-down stretches in 04/06 use standard gym equipment or none. The disliked leg extension machine (0585) and band leg extension (3007) are excluded in 03 and absent from 04. No cardio artifact (not applicable). | - |
+| G2 | Schedule fit | PASS | 04 uses 4 strength sessions on Mon/Tue/Thu/Fri, 0 cardio, matching 01 ("4 strength / 0 cardio"). I recomputed every session with the time model in 04 (10-min warm-up, plus 1 min setup per exercise, plus set and rest time): Phase 1 Upper A about 50 min, Lower A about 56.5, Upper B about 55.5, Lower B about 56; Phase 2 Upper A about 57, Lower A about 57, Upper B about 57, Lower B about 56 (04 states 54; still under 60). Deloads 35-45 min. The 06 cool-downs only use time left under 60 min, and rest-day mobility is optional and not a session. All sessions fit 60 min. | - |
+| G3 | Limitations respected | PASS | 01 reports no limitations; the only constraint is the excluded leg extension, which is respected (03 Excluded exercises; 04 Summary "The leg extension machine is not used"). 02 safety guidance is followed: 10-min warm-up with ramp-up sets, safety pins on squat and bench, 2 or more RIR on heavy barbell compounds (04 Phase table and Progression), pain rule. 06 has a Red flags section (chest pain, palpitations, dizziness, sharp pain, sprain/strain signs, numbness or tingling, worsening pain) with sources. No diet, calorie or supplement advice (06 Nutrition refers to a dietitian). | - |
+| G4 | Muscle coverage and balance | PASS | `analyze_workout`, Phase 1 week (25 exercises: barbell_bench_press, barbell_barbell_bent_over_row, overhead_press, lat_pulldown, lateral_raise, barbell_curl, tricep_pushdown, barbell_back_squat, romanian_deadlift, bulgarian_split_squat, seated_leg_curl, standing_calf_raise, hanging_leg_raise, barbell_barbell_incline_bench_press, pull_up, dumbbell_row, bodyweight_chest_dip, face_pull, incline_dumbbell_curl, skull_crusher, barbell_barbell_deadlift, leg_press, barbell_hip_thrust, seated_calf_raise, cable_crunch): gaps none, imbalances none. Coverage: chest, shoulders, biceps, triceps, quadriceps, hamstrings, calves and hip flexors 100%; back 83.3%; adductors 80%; core 60%; glutes 50% (glute max and med are primary; minimus and TFL-type muscles are not counted); forearms 50% (stabiliser only); neck 33.3%. Phase 2 week (24 exercises, with dumbbell incline press, bent_over_reverse_fly and hammer_curl swapped in): same result, gaps none, imbalances none. All 8 main patterns are used; "missing" patterns (carry, rotation, lunge, abduction and others) are not needed for general hypertrophy. Push/pull compound sets are 12 vs 12 (Phase 1) and 14 vs 14 (Phase 2), which I checked against the 04 session tables. Large muscles get 10-16 sets/week, in line with 02. Observation: side delts get about 7.5 sets/week. 04 justifies this as a time-budget choice, and the tool reports no gap. | - |
+| G5 | Progression defined for every phase | PASS | 04 Progression gives double progression with kg steps per lift type. Phase 1 has week-1 calibration, weekly rep/load increases and a pass test. Phase 2 has week-7 starting loads, RIR targets, load-step cadence and an optional back-off set. Deloads in weeks 6 and 12 are in the Deload weeks table (week 12 with retest), plus an autoregulated extra deload. Hard sets, stalled lifts, one missed session, a missed week or more, and pain are all covered. Cardio is not applicable. | - |
+| G6 | Difficulty fits experience level | PASS | User is intermediate (01). No row in 03 exceeds intermediate. Advanced items (front_squat, jefferson_squat, archer pull-up) are excluded. I confirmed with `get_muscles_worked`: barbell_hip_thrust, skull_crusher, hanging_leg_raise and bodyweight_chest_dip are all "intermediate". Intensity fits too: main lifts at 6-10 reps with 2 or more RIR, isolation work to 0-1 RIR only on the last set in Phase 2, and loaded pull-ups/dips only after the bodyweight reps are reached. | - |
+| G7 | Every recommendation links to a real source | PASS | I fetched all 17 URLs in 02 (ACSM 2009, ACSM 2026 record, ACSM 2026 summary, Schoenfeld 2016 frequency, Schoenfeld 2017 volume, Pelland 2026, Schoenfeld 2017 loads, Refalo 2023, Schoenfeld 2016 rest, Bell 2023, CDC adults, NHS adults, WHO fact sheet, Better Health resistance training, CDC sleep, BHF, NHLBI). All exist and support their claims. 03: github.com/hasaneyldrm/exercises-dataset exists (exercises.json with id, equipment, body_part, target). Exercise rows cite 4-digit dataset ids, and spot-checked musclesworked ids resolve. 04: all URLs are shared with 02 (verified), plus the dataset (verified). 06: fetched NHS stretch after exercising, NHS flexibility, RJAH chest stretch (20 s x 3, stop if pain or tingling), NHS sprains and strains, and Better Health sporting performance and food. All exist and support their claims. Minor wording notes (no failure): the ACSM 2026 abstract says ">=10 sets/wk" without "per muscle" (the ACSM summary page says "~10 sets per muscle group", so the claim is supported); Better Health gives both "2-10%" and "5-10%" load increases; the Pelland abstract says frequency is "compatible with negligible effects" for hypertrophy, close to the 02 wording. | - |
+| G8 | Internal consistency and variety | PASS | Length (12 weeks), phases (Build 1-5, Deload 6, Progress 7-11, Deload and retest 12) and 4 sessions/week agree across 01, 02, 04 and 06. No exercise repeats within any session (all 8 session tables checked; ramp-up sets are not separate exercises). Every training day has a main compound: bench press (Mon), back squat (Tue), incline press and pull-up (Thu), deadlift (Fri). 06 matches the real schedule: days, session names, rest days, recovery hours (72 h and 96 h are correct), deload weeks and missed-session rules are all taken from 04. Phase 2 sets (04 "about 12-14", up to 16.5 for glutes) sit within the 12-16 range in 02. Variety: accessories rotate in Phase 2 and the main lifts stay. Minor observation: 06 Summary gives the Phase 1 Upper A cool-down as "5-8 minutes" while its table says "6-8 min"; this is cosmetic and both fit under 60 min. | - |
+
+## Retry Instructions
+
+None

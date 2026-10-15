@@ -1,0 +1,242 @@
+{
+  "runId": "sample-02-intermediate-gym-muscle-gain",
+  "createdAt": "2026-10-14T23:12:04.031Z",
+  "updatedAt": "2026-10-14T23:37:34.776Z",
+  "status": "completed",
+  "requirementsConfirmed": true,
+  "stages": {
+    "requirements": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/01-requirements.md",
+      "sha256": "9cc0487421a6f8721285cd314fd0b00f683a911e3995b6a51f20c3a58fdd2090",
+      "updatedAt": "2026-10-14T23:12:47.364Z"
+    },
+    "guidelines": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/02-guidelines.md",
+      "sha256": "02258249393fd512f9292d0da3e12781e685bcb7fd6f19012fd8101cec88a823",
+      "updatedAt": "2026-10-14T23:19:21.467Z"
+    },
+    "exercises": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/03-exercise-selection.md",
+      "sha256": "1ebce72839082596de02f50a8e744154bd230d9141b21cef8e57005be18d8d65",
+      "updatedAt": "2026-10-14T23:18:53.926Z"
+    },
+    "training": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/04-training-plan.md",
+      "sha256": "4a9bcefe7604f78eb6fbd2b4d972c44a872fa0229234cb1cba7d59df114613cc",
+      "updatedAt": "2026-10-14T23:25:11.431Z"
+    },
+    "cardio": {
+      "status": "skipped",
+      "retries": 0,
+      "artifact": "artifacts/05-cardio-plan.md",
+      "sha256": null,
+      "updatedAt": null,
+      "reason": "strength-only modality: user wants no dedicated cardio beyond a short warm-up"
+    },
+    "recovery": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/06-recovery-plan.md",
+      "sha256": "d27c5c31390f98f7d11b97a7e7bb0469a290e0eeb532b646160b90e97d1aebdb",
+      "updatedAt": "2026-10-14T23:28:01.682Z"
+    },
+    "validation": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/07-validation-report.md",
+      "sha256": "ccb4d136269ede330475d525a5ab4bfa01e74289fe4947d1739eda130153af9c",
+      "updatedAt": "2026-10-14T23:30:13.867Z"
+    },
+    "draft": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "artifacts/08-draft-program.md",
+      "sha256": "ad62af01afa61bcc9ccbca1fe9513b6bb64383cb609b55160ffba4c67582962b",
+      "updatedAt": "2026-10-14T23:34:00.673Z"
+    },
+    "final": {
+      "status": "done",
+      "retries": 0,
+      "artifact": "final/training-program.md",
+      "sha256": "578aed229e21e8ba3b9edc981d0d70b89b6422efb0ff3efde830a40a3023421d",
+      "updatedAt": "2026-10-14T23:37:34.776Z"
+    }
+  },
+  "gates": {
+    "G1": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.418Z"
+    },
+    "G2": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.499Z"
+    },
+    "G3": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.561Z"
+    },
+    "G4": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.639Z"
+    },
+    "G5": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.715Z"
+    },
+    "G6": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.778Z"
+    },
+    "G7": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.840Z"
+    },
+    "G8": {
+      "status": "pass",
+      "owners": [],
+      "updatedAt": "2026-10-14T23:30:28.920Z"
+    }
+  },
+  "approval": {
+    "status": "approved",
+    "sha256": "ad62af01afa61bcc9ccbca1fe9513b6bb64383cb609b55160ffba4c67582962b",
+    "at": "2026-10-14T23:35:01.815Z"
+  },
+  "events": [
+    {
+      "at": "2026-10-14T23:12:04.031Z",
+      "msg": "run initialised"
+    },
+    {
+      "at": "2026-10-14T23:12:07.681Z",
+      "msg": "requirements -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:12:47.364Z",
+      "msg": "requirements artifact written"
+    },
+    {
+      "at": "2026-10-14T23:15:23.706Z",
+      "msg": "requirements confirmed by user"
+    },
+    {
+      "at": "2026-10-14T23:15:23.783Z",
+      "msg": "cardio skipped: strength-only modality: user wants no dedicated cardio beyond a short warm-up"
+    },
+    {
+      "at": "2026-10-14T23:15:31.396Z",
+      "msg": "guidelines -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:15:31.455Z",
+      "msg": "exercises -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:18:53.926Z",
+      "msg": "exercises artifact written"
+    },
+    {
+      "at": "2026-10-14T23:19:21.467Z",
+      "msg": "guidelines artifact written"
+    },
+    {
+      "at": "2026-10-14T23:19:47.885Z",
+      "msg": "training -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:25:11.431Z",
+      "msg": "training artifact written"
+    },
+    {
+      "at": "2026-10-14T23:25:29.297Z",
+      "msg": "recovery -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:28:01.682Z",
+      "msg": "recovery artifact written"
+    },
+    {
+      "at": "2026-10-14T23:28:15.125Z",
+      "msg": "validation -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:30:13.867Z",
+      "msg": "validation artifact written"
+    },
+    {
+      "at": "2026-10-14T23:30:28.418Z",
+      "msg": "gate G1 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.499Z",
+      "msg": "gate G2 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.561Z",
+      "msg": "gate G3 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.639Z",
+      "msg": "gate G4 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.715Z",
+      "msg": "gate G5 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.778Z",
+      "msg": "gate G6 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.840Z",
+      "msg": "gate G7 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:28.920Z",
+      "msg": "gate G8 pass"
+    },
+    {
+      "at": "2026-10-14T23:30:29.116Z",
+      "msg": "draft -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:34:00.673Z",
+      "msg": "draft artifact written"
+    },
+    {
+      "at": "2026-10-14T23:34:14.304Z",
+      "msg": "run status -> awaiting_approval"
+    },
+    {
+      "at": "2026-10-14T23:35:01.817Z",
+      "msg": "draft approved by human"
+    },
+    {
+      "at": "2026-10-14T23:35:12.833Z",
+      "msg": "final -> in_progress"
+    },
+    {
+      "at": "2026-10-14T23:37:34.776Z",
+      "msg": "final artifact written"
+    },
+    {
+      "at": "2026-10-14T23:37:34.776Z",
+      "msg": "run completed"
+    }
+  ]
+}

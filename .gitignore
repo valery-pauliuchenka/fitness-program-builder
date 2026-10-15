@@ -1,0 +1,19 @@
+# Secrets: never commit
+.env
+.env.*
+!.env.example
+
+# Third-party MCP server checkout (created by `npm run setup`)
+vendor/
+node_modules/
+
+# Local Claude Code overrides
+.claude/settings.local.json
+
+# Ad-hoc runs stay local; the sample runs are committed
+runs/*
+!runs/README.md
+!runs/sample-*/
+
+*.log
+.DS_Store

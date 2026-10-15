@@ -1,0 +1,12 @@
+{
+  "name": "fitness-program-builder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agentic fitness-program workflow for Claude Code (coordinator + subagents, quality gates, human approval, resumable state).",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "check": "node scripts/setup.js --check",
+    "test": "node scripts/selftest.js"
+  },
+  "engines": { "node": ">=18" }
+}
